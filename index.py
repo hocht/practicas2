@@ -68,3 +68,4 @@ ingrediente = 'peperoni' in ingredientes
 print(f'el ingrediente {ingrediente} esta incluido')
 ingrediente = 'salchicha' in ingredientes
 print(f'el ingrediente {ingrediente} no esta incluido')
+#logre hacer el primer commit
