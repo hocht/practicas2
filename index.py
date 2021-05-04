@@ -69,3 +69,8 @@ print(f'el ingrediente {ingrediente} esta incluido')
 ingrediente = 'salchicha' in ingredientes
 print(f'el ingrediente {ingrediente} no esta incluido')
 #logre hacer el primer commit
+# Se hace una prueba de valores boleanos
+kat = 'no te quiere'
+fer = 'tampoco'
+print("is kat == 'no te quiere' yo creo que si")
+print(kat == 'no te quiere')
