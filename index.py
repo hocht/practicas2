@@ -74,3 +74,31 @@ kat = 'no te quiere'
 fer = 'tampoco'
 print("is kat == 'no te quiere' yo creo que si")
 print(kat == 'no te quiere')
+
+# Usando if con listas
+usuarios = ['admin','Rodrigo','Mariana','jocelyn','gerardo','dinora','luisa'
+           'felipe','juan','emilio','carlos','adriana','Maria','sofia']
+listaMinusculas = [usuario.lower() for usuario in usuarios]
+if usuarios:
+    entradaUsuario = input('Introduce el nombre de usuario \n')
+    if entradaUsuario in usuarios:
+        if entradaUsuario == 'admin':
+            print('Buenos dias senor, quiere el informe de actividad?')
+        else:
+            print('Hola, bienvenido a mi pagina!')
+    else:
+        print('Usted no esta registrado \n')
+        print('quieres registrarte? \n')
+        SioNo = input('y/n')
+        if SioNo == 'y':
+            nuevoUsuario = input('introduce nuevo usuario')
+            if nuevoUsuario in listaMinusculas:
+                print('el usuario ya existe introduce uno diferente')
+                nuevoUsuario = input('introduce nuevo usuario')
+                usuarios.append(nuevoUsuario)
+                print(usuarios)
+            else:
+                usuarios.append(nuevoUsuario)
+                print(usuarios)
+else:
+    print('no existen usuarios')
