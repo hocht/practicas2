@@ -50,3 +50,19 @@ for consola in consolas.keys():
 print('Estas son las companias en la lista')
 for companias in sorted(set(consolas.values())):
     print(companias.title())
+
+# diccionario anidado en lista
+pizzas = {'peperoni':{'ingredientes':['peperoni','queso'],
+                      'estilo':'napolitana','orilla':'natural'},
+          'mexicana':{'ingredientes':['chorizo','queso','jalapeno','jitomate'],
+                      'estilo':'california','orilla':'rellena de queso'},
+          'hawaiana':{'ingredientes':['pina','queso','jamon','tocino'],
+                      'estilo':'taglio','orilla':'cubierta de ajonjoli'},
+          'Tres quesos':{'ingredientes':['queso parmesano','queso gorogonzola','queso chedar'],
+                         'estilo':'argentino','orilla':'natural'}
+                        }
+for pizza,pizzaInfo in pizzas.items():
+    print(f"\nla pizza de {pizza.title()} tiene los siguientes ingredientes:"
+          f"\n{', '.join(pizzaInfo['ingredientes']).title()}"
+          f"\nes de estilo {pizzaInfo['estilo']} con la orilla {pizzaInfo['orilla']}")
+# aqui anide un if con muchas variables y funciones
