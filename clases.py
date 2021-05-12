@@ -21,8 +21,7 @@ class restaurante:
         if personas >= self.comensales:
             self.comensales += personas
         else:
-            print("no puedes restar personas al numero de comensales")
-        
+            print("no puedes restar personas al numero de comensales") 
         
 miRestaurante = restaurante('la joya','cocina italiana')
 print(f"el nombre de mi restaurante es {miRestaurante.nombre.title()}.\n")
