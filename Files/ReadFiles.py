@@ -25,3 +25,9 @@ with open(filename,'a') as file_object:
 with open(filename) as file_object:
     contents = file_object.read()
     print(contents)
+try:
+    with open("falla.tx") as file_object:
+        contents = file_object.read()
+        print(contents)
+except FileNotFoundError:
+        print('Aqui hubo un error')
