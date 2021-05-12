@@ -1,4 +1,4 @@
-filename = "files\python.txt"
+filename = "python.txt"
 
 with open(filename) as file_object:
     contents = file_object.read()
